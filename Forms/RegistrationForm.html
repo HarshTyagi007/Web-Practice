@@ -1,0 +1,56 @@
+<!-- http://127.0.0.1:5500/marathonForm.html?firstname=Harsh&lastname=Tyagi&race=on&mail=asjdfhkj%40asdf&PassWord=asdfdsa&division=kids -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+</head>
+<body>
+    <h1>Race Registration </h1>
+    <form action=""> 
+        <!-- In action we have to fill where to submit this form  -->
+        <div>
+        <label for="first">First Name</label>
+        <input type="text" id="first" name="firstname" required>
+
+        <label for=last">Last Name</label>
+        <input type="text" id="last" name="lastname" required>
+        </div>
+        
+        <p>Select A Race:</p>
+
+        <div>
+        <input type="radio" name="race" id="funrun">
+        <label for="funrun">Fun Run 5K</label>
+        </div>
+
+        <div>
+        <input type="radio" name="race" id="half">
+        <label for="half">Half Marathon</label>
+        </div>
+
+        <div>
+        <input type="radio" name="race" id="full">
+        <label for="full">Full Marathon</label>
+        </div>
+        <div>
+            <label for="mail">Email</label>
+            <input type="email" name="mail" id="mail" required>
+        
+            <label for="pass">PassWord</label>
+            <input type="password" name="PassWord" id="pass" required>
+        </div>
+        <div>
+            <label for="division">Select Age Group</label>
+            <select name="division" id="division">
+                <option value="kids">Under 18</option>
+                <option value="young adults">18-40</option>
+                <option value="Seniors ">More than 40</option>
+            </select>
+        </div>
+        <button>Register required</button>
+    </form>
+</body>
+</html>
